@@ -1,0 +1,35 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 80 -130 100 -130 {}
+L 4 80 -100 100 -100 {}
+L 4 80 -70 100 -70 {}
+L 4 200 -130 220 -130 {}
+L 4 200 -110 220 -110 {}
+L 4 200 -90 220 -90 {}
+L 4 100 -150 100 -50 {}
+L 4 100 -50 200 -50 {}
+L 4 100 -150 200 -150 {}
+L 4 200 -150 200 -50 {}
+L 7 200 -70 220 -70 {}
+B 5 77.5 -132.5 82.5 -127.5 {name=VBIAS sig_type=std_logic dir=in}
+B 5 77.5 -102.5 82.5 -97.5 {name=VIN sig_type=std_logic dir=in}
+B 5 77.5 -72.5 82.5 -67.5 {name=VREF sig_type=std_logic dir=in}
+B 5 217.5 -132.5 222.5 -127.5 {name=VEA sig_type=std_logic dir=out}
+B 5 217.5 -112.5 222.5 -107.5 {name=VREG sig_type=std_logic dir=out}
+B 5 217.5 -92.5 222.5 -87.5 {name=VFB sig_type=std_logic dir=out}
+B 5 217.5 -72.5 222.5 -67.5 {name=VSS sig_type=std_logic dir=inout}
+T {@symname} 118 -166 0 0 0.2 0.2 {}
+T {VBIAS} 105 -134 0 0 0.2 0.2 {}
+T {VIN} 105 -104 0 0 0.2 0.2 {}
+T {VREF} 105 -74 0 0 0.2 0.2 {}
+T {VEA} 195 -134 0 1 0.2 0.2 {}
+T {VREG} 195 -114 0 1 0.2 0.2 {}
+T {VFB} 195 -94 0 1 0.2 0.2 {}
+T {VSS} 195 -74 0 1 0.2 0.2 {}
