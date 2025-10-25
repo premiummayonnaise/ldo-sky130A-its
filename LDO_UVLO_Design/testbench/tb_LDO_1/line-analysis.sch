@@ -17,7 +17,7 @@ N 460 -340 520 -340 {lab=VREG}
 N 380 -340 460 -340 {lab=VREG}
 C {code_shown.sym} 910 -320 0 0 {name="AC-SIM" only_toplevel=false value="
 
-.temp 125
+.temp 27
 .control
 
 	DC V8 1.8 3 0.01
@@ -56,7 +56,7 @@ value=1u
 footprint=1206
 device=polarized_capacitor}
 C {res.sym} 460 -230 0 0 {name=R2
-value=1m
+value=200m
 footprint=1206
 device=resistor
 m=1}

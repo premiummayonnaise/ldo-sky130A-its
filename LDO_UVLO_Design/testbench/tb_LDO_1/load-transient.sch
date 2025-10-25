@@ -15,6 +15,8 @@ N 330 -400 400 -400 {lab=VEA}
 N 480 -320 480 -300 {lab=#net1}
 N 480 -380 540 -380 {lab=VREG}
 N 400 -380 480 -380 {lab=VREG}
+N 540 -250 540 -240 {lab=VSS}
+N 540 -320 540 -310 {lab=#net2}
 C {ldo-sky130A-its/LDO_UVLO_Design/schematics/full_LDO_top.sym} 110 -270 0 0 {name=x1}
 C {vsource.sym} 690 -260 0 0 {name=V1 value="0.8" savecurrent=false}
 C {vsource.sym} 810 -260 0 0 {name=V3 value="DC 0.9" savecurrent=false}
@@ -35,7 +37,7 @@ C {code_shown.sym} 870 -300 0 0 {name="AC-SIM" only_toplevel=false value="
 .control
 	
 	tran 0.1u 200u
-	plot VREG 
+	plot i(Vmeas)
 	plot I0
 
 .endc
@@ -47,7 +49,7 @@ C {lab_pin.sym} 810 -200 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 400 -360 0 1 {name=p6 sig_type=std_logic lab=VFB}
 C {lab_pin.sym} 400 -400 0 1 {name=p10 sig_type=std_logic lab=VEA}
 C {isource.sym} 540 -350 0 0 {name=I0 value="PULSE(25m 50m 5u 50n 50n 10u 40u)"}
-C {lab_pin.sym} 540 -320 0 1 {name=p15 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 540 -240 0 1 {name=p15 sig_type=std_logic lab=VSS}
 C {capa-2.sym} 480 -350 0 0 {name=C1
 m=1
 value=1u
@@ -61,3 +63,4 @@ value=1m
 footprint=1206
 device=resistor
 m=1}
+C {ammeter.sym} 540 -280 0 0 {name=Vmeas savecurrent=true spice_ignore=0}

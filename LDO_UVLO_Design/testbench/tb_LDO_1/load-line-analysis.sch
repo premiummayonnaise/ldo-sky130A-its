@@ -34,7 +34,7 @@ C {code_shown.sym} 980 -380 0 0 {name="AC-SIM" only_toplevel=false value="
 .temp = 125
 .control
 	
-	DC I0 0 50m 1m
+	DC I0 0 50m 1m V5 1.8 2.2 0.01
 	plot VREG
 	plot VEA
 	plot VFB

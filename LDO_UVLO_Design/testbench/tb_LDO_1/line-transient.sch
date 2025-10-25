@@ -36,7 +36,7 @@ C {code_shown.sym} 880 -300 0 0 {name="AC-SIM" only_toplevel=false value="
 	
 	tran 0.1u 200u
 	plot VREG 
-	plot I0
+	plot VIN
 
 .endc
 "}
@@ -46,7 +46,7 @@ C {lab_pin.sym} 120 -400 0 0 {name=p3 sig_type=std_logic lab=VBIAS}
 C {lab_pin.sym} 810 -200 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 400 -360 0 1 {name=p6 sig_type=std_logic lab=VFB}
 C {lab_pin.sym} 400 -400 0 1 {name=p10 sig_type=std_logic lab=VEA}
-C {isource.sym} 540 -350 0 0 {name=I0 value="30m"}
+C {isource.sym} 540 -350 0 0 {name=I0 value="50m"}
 C {lab_pin.sym} 540 -320 0 1 {name=p15 sig_type=std_logic lab=VSS}
 C {capa-2.sym} 480 -350 0 0 {name=C1
 m=1

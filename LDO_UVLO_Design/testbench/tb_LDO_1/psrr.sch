@@ -12,7 +12,6 @@ N 330 -340 400 -340 {lab=VSS}
 N 330 -360 400 -360 {lab=VFB}
 N 330 -380 400 -380 {lab=VREG}
 N 330 -400 400 -400 {lab=VEA}
-N 480 -320 480 -300 {lab=#net1}
 N 480 -380 540 -380 {lab=VREG}
 N 400 -380 480 -380 {lab=VREG}
 C {ldo-sky130A-its/LDO_UVLO_Design/schematics/full_LDO_top.sym} 110 -270 0 0 {name=x1}
@@ -45,18 +44,13 @@ C {lab_pin.sym} 120 -400 0 0 {name=p3 sig_type=std_logic lab=VBIAS}
 C {lab_pin.sym} 830 -250 0 0 {name=p5 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 400 -360 0 1 {name=p6 sig_type=std_logic lab=VFB}
 C {lab_pin.sym} 400 -400 0 1 {name=p10 sig_type=std_logic lab=VEA}
-C {isource.sym} 540 -350 0 0 {name=I0 value=50m}
+C {isource.sym} 540 -350 0 0 {name=I0 value=30m}
 C {lab_pin.sym} 540 -320 0 1 {name=p15 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 540 -380 0 1 {name=p18 sig_type=std_logic lab=VREG}
+C {title.sym} 190 -60 0 0 {name=l2 author="Dzaki Andriansyah"}
 C {capa-2.sym} 480 -350 0 0 {name=C1
 m=1
 value=1u
 footprint=1206
 device=polarized_capacitor}
-C {lab_pin.sym} 540 -380 0 1 {name=p18 sig_type=std_logic lab=VREG}
-C {title.sym} 190 -60 0 0 {name=l2 author="Dzaki Andriansyah"}
-C {lab_pin.sym} 480 -240 0 1 {name=p9 sig_type=std_logic lab=VSS}
-C {res.sym} 480 -270 0 0 {name=R1
-value=200m
-footprint=1206
-device=resistor
-m=1}
+C {lab_pin.sym} 480 -320 0 1 {name=p9 sig_type=std_logic lab=VSS}

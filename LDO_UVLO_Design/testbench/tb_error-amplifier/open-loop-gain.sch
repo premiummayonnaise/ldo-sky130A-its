@@ -48,7 +48,7 @@ C {code_shown.sym} 920 -280 0 0 {name="AC-SIM" only_toplevel=false value="
 C {lab_pin.sym} 460 -270 1 0 {name=p19 sig_type=std_logic lab=VBIAS}
 C {capa-2.sym} 560 -160 0 0 {name=C1
 m=1
-value=1p
+value=5p
 footprint=1206
 device=polarized_capacitor}
 C {lab_pin.sym} 560 -130 3 0 {name=p4 sig_type=std_logic lab=VSS}
